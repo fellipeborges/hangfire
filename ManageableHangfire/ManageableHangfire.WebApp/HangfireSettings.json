@@ -1,0 +1,16 @@
+// Stores hangfire settings
+{
+  "IsActive": false,
+  "ConnectionString": "Data Source=SAOWCW2X7S2\\SQLEXPRESS;Initial Catalog=tests;Integrated Security=True",
+  "HangfireUrl": "/hangfire",
+  "Queues": [
+    {
+      "Name": "download",
+      "Workers": 3
+    },
+    {
+      "Name": "upload",
+      "Workers": 3
+    }
+  ]
+}
