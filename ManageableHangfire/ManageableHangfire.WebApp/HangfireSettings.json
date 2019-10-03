@@ -1,6 +1,6 @@
 // Stores hangfire settings
 {
-  "IsActive": false,
+  "IsActive": true,
   "ConnectionString": "Data Source=SAOWCW2X7S2\\SQLEXPRESS;Initial Catalog=tests;Integrated Security=True",
   "HangfireUrl": "/hangfire",
   "Queues": [
