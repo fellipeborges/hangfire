@@ -36,7 +36,7 @@ namespace ManageableHangfire.Core.Queue
             var options = new BackgroundJobServerOptions { Queues = new string[] { QueueConstants.MANAGER }, WorkerCount = 1 };
             _managerJobServer = new BackgroundJobServer(options);
 
-            RecurringJob.AddOrUpdate(() => HangfireQueueManager.ManageHangfire(), Cron.MinuteInterval(5), queue: QueueConstants.MANAGER);
+            RecurringJob.AddOrUpdate(() => HangfireQueueManager.ManageHangfire(), Cron.MinuteInterval(1), queue: QueueConstants.MANAGER);
 
             // Executes for the first time to initialize the job servers if needed
             HangfireQueueManager.ManageHangfire();

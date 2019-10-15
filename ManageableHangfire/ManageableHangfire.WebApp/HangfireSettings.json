@@ -6,11 +6,11 @@
   "Queues": [
     {
       "Name": "download",
-      "Workers": 3
+      "Workers": 1
     },
     {
       "Name": "upload",
-      "Workers": 3
+      "Workers": 8
     }
   ]
 }
